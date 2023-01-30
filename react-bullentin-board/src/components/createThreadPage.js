@@ -1,5 +1,11 @@
 // import * as React from 'react'
+import { CreateThread } from "./createThread"
 
 export function CreateThreadPage() {
-    return <h2>Create Thread Page</h2>
+    return (
+        <div>
+            <h2>新規スレッド作成</h2>
+            <CreateThread />
+        </div>
+    )
 }

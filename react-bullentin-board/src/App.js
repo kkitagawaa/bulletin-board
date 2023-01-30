@@ -2,7 +2,6 @@
 import './App.css';
 
 import * as React from 'react'
-import { ThreadsListContainer } from './components/threadsList';
 import {CreateThreadPage} from './components/createThreadPage'
 import {ThreadListPage} from './components/threadListPage'
 
@@ -13,8 +12,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <span>掲示板</span>
-        <a href='/thread/new'>スレッドを立てる</a>
+        <span id='top_title'>掲示板</span>
+        <a href='/thread/new' id='link_create_thread'>スレッドを立てる</a>
       </header>
 
       <div className='App-body'>
@@ -23,6 +22,7 @@ function App() {
           <Route path="/thread/new" element={<CreateThreadPage />} />
         </Routes>
       </div>
+      <footer className='App-footer'><span className='footer_text'>footer</span></footer>
     </div>
   );
 }

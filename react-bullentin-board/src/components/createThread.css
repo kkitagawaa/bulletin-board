@@ -1,0 +1,5 @@
+.create_thread_container {
+    background-color: white;
+    max-width: calc(300px + 2vmin);
+    margin:  0 auto;
+}

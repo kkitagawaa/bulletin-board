@@ -3,14 +3,32 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: lightgreen;
   min-height: 50px;
   color: white;
   font-size: calc(10px + 2vmin);
+  
 }
 
 .App-body {
   background-color: gray
+}
+
+.App-footer {
+  background-color: gray;
+  margin: 0;
+}
+
+.footer_text {
+  color: gray
+}
+
+#link_create_thread {
+  float: right;
+}
+
+#top_title {
+  float: left;
 }
 
 /* .App-logo {
