@@ -1,6 +1,6 @@
 .threads_list_container {
     background-color: white;
-    max-width: calc(300px + 2vmin);
+    max-width: calc(600px + 5vmin);
     margin:   auto;
 }
 
