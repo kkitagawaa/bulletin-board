@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Link } from 'react-router-dom';
 import './threadsList.css'
 
 export function ThreadsListContainer(props) {
@@ -17,7 +18,12 @@ export function ThreadsListContainer(props) {
         (thread) => {
           return (
             <div className='thread' key={thread.id}>
-            <p className='thread_title'>{thread.title}</p>
+              <Link to={'/thread/' + thread.id + '/posts/'}>
+                <p className='thread_title' id={thread.id}>{thread.title}</p>
+              </Link>
+              {/* <a href='/thread/${thread.id}/post/'>
+                <p className='thread_title'>{thread.title}</p>
+              </a> */}
             </div>
           )
         }

@@ -7,6 +7,7 @@ import {ThreadListPage} from './components/threadListPage'
 import { Header } from './components/header';
 
 import {Routes, Route} from 'react-router-dom'
+import { PostsPage } from './components/postsPage';
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<ThreadListPage />} />
           <Route path="/thread/new" element={<CreateThreadPage />} />
+          <Route path="/thread/:threadId/posts" element={<PostsPage />} >
+          </Route>
         </Routes>
       </div>
       {/* <footer className='App-footer'><span className='footer_text'>footer</span></footer> */}
