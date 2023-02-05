@@ -18,11 +18,9 @@ function App() {
         <Routes>
           <Route path="/" element={<ThreadListPage />} />
           <Route path="/thread/new" element={<CreateThreadPage />} />
-          <Route path="/thread/:threadId/posts" element={<PostsPage />} >
-          </Route>
+          <Route path="/thread/:threadId/posts" element={<PostsPage />} />
         </Routes>
       </div>
-      {/* <footer className='App-footer'><span className='footer_text'>footer</span></footer> */}
     </div>
   );
 }

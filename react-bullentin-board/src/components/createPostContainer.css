@@ -1,0 +1,5 @@
+.createPostContainer {
+    background-color: white;
+    max-width: calc(500px + 5vmin);
+    margin:   auto;
+}
