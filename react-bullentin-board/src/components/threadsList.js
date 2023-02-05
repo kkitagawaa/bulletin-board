@@ -22,9 +22,6 @@ export function ThreadsListContainer(props) {
               <Link to={'/thread/' + thread.id + '/posts/'} state={{ threadTitle: thread.title }}>
                 <p className='thread_title' id={thread.id}>{thread.title}</p>
               </Link>
-              {/* <a href='/thread/${thread.id}/post/'>
-                <p className='thread_title'>{thread.title}</p>
-              </a> */}
             </div>
           )
         }

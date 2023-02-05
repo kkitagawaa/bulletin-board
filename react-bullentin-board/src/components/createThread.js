@@ -39,7 +39,6 @@ export function CreateThread(props) {
                 }>スレッドを作成</button>
             </p>
             <p>
-                {/* <a href='/'>スレッド一覧に戻る</a> */}
                 <button onClick={back2Home}>
                 スレッド一覧に戻る
                 </button>
