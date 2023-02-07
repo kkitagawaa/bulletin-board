@@ -38,6 +38,7 @@ export function PostContainer(props) {
     return (
         <div className="posts_container">
             {posts_list}<br></br>
+            {/* {var変数でposts_listを持つよりも関数を呼ぶ形にして返す方が安全} */}
             <button onClick={
               () => {if (offset>=10) {setOffset(offset-10)}}
             }>前のページ</button>
@@ -47,7 +48,6 @@ export function PostContainer(props) {
                 setOffset(offset+10);
             }
             }>次のページ</button>
-            {/* 存在しない次のページの処理？ */}
         </div>
     )
 }
